@@ -1,18 +1,17 @@
 # BitBruteForce-Wallet
-This is a little but effective script to Brute Force the Private Key of any Bitcoin Public Address.
+This is an effective script to Brute Force, the Private Key of any Bitcoin Public Address.
 
-How this script works?
+How does the script work? 
 Very easy.
 
-Every code i saw for the last year just generate randomly private and public address and check the balance (very, very slow for the API Request)
+Every code I´ve seen for the last year just generates randomly private and public addresses and checks the balance (very, very slow for the API Request).
 
-So, i found **123,000 Bitcoin Addresses** with 1+ BTC from 2009 to 2013 and NEVER made a transaction, so, lost BTC...
-like huge pirates boats at the ocean bottom full of treasures.
+So, i found **123,000 Bitcoin Addresses** with 1+ BTC from 2009 to 2013 and NEVER made a transaction, therefore, lost BTC... it is just like huge pirate boats in the bottom of the ocean filled with treasures.
 
-This Script create randomly private and public address without checking the balance, instead of making API Request, the created public addresses compare it with the list i have.
+This Script creates randomly private and public addresses without checking the balance, instead of making API Request, the created Public Address is compared with the list I own.
 
-So, short long story.
-Create Random Public Address (**RPA**) and check one by one with the Public Address (**PA**) at the list
+Long story short. 
+Create Random Public Address (**RPA**) and check one by one with the Public Address (**PA**) at the list.
 
 **if RPC == PA then
 	YOU WINNED THE LOTTREY!
