@@ -18,6 +18,8 @@ Create Random Public Address (**RPA**) and check one by one with the Public Addr
 	YOU WINNED THE LOTTREY!
 else
 	KEEP SEARCHING MTF!**
+	
+(Script tested on i7-4500U 8 Cores - 5 K/s per Core. 3,456,000 Private Keys generated per day)
 
 i think is quite simple.
 
