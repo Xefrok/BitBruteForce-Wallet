@@ -57,6 +57,9 @@ def seek(r, df_handler):
 			print('Core :'+str(r)+" K/s = "+ str(i / time_diff))
 		#print ('Worker '+str(r)+':'+ str(i) + '.-  # '+pub + ' # -------- # '+ priv+' # ')
 		pub = pub + '\n'
+		filename = 'bit.txt'
+		with open(filename) as f:
+			for line in f:
 		if pub in line:
 			msg = "\nPublic: " + str(pub) + " ---- Private: " + str(priv) + "YEI"
 			text = msg
