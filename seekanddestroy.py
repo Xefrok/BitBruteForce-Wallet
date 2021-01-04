@@ -60,27 +60,27 @@ def seek(r, df_handler):
 		filename = 'bit.txt'
 		with open(filename) as f:
 			for line in f:
-		if pub in line:
-			msg = "\nPublic: " + str(pub) + " ---- Private: " + str(priv) + "YEI"
-			text = msg
-			#UNCOMMENT IF 2FA from gmail is activated, or risk missing your winning ticket;)
-			#server = smtplib.SMTP("smtp.gmail.com", 587)
-			#server.ehlo()
-			#server.starttls()
-			#server.login("example@gmail.com", "password")
-			#fromaddr = "example@gmail.com"
-			#toaddr = "example@gmail.com"
-			#server.sendmail(fromaddr, toaddr, text)
-			print(text)
-			with open('Wallets.txt','a') as f:
-				f.write(priv)
-				f.write('     ')
-				f.write(pub)
-				f.write('\n')
-				f.close()
-			time.sleep(30)
-			print ('WINNER WINNER CHICKEN DINNER!!! ---- ' +dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pub, priv)
-			break
+				if pub in line:
+					msg = "\nPublic: " + str(pub) + " ---- Private: " + str(priv) + "YEI"
+					text = msg
+					#UNCOMMENT IF 2FA from gmail is activated, or risk missing your winning ticket;)
+					#server = smtplib.SMTP("smtp.gmail.com", 587)
+					#server.ehlo()
+					#server.starttls()
+					#server.login("example@gmail.com", "password")
+					#fromaddr = "example@gmail.com"
+					#toaddr = "example@gmail.com"
+					#server.sendmail(fromaddr, toaddr, text)
+					print(text)
+					with open('Wallets.txt','a') as f:
+						f.write(priv)
+						f.write('     ')
+						f.write(pub)
+						f.write('\n')
+						f.close()
+					time.sleep(30)
+					print ('WINNER WINNER CHICKEN DINNER!!! ---- ' +dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), pub, priv)
+					break
 					
 
 
@@ -93,3 +93,4 @@ if __name__ == '__main__':
 		p = multiprocessing.Process(target=seek, args=(r,df_handler))
 		jobs.append(p)
 		p.start()
+
