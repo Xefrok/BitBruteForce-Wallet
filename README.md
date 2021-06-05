@@ -22,7 +22,8 @@ else
 
 i think is quite simple.
 
-If you like it!! **1KyQXpa1Zke5v94QZV2U77i7oaVwPTijdY**
+Give it a go
+
 
 
 REQUERIMENTS
